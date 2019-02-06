@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Tab2Page } from './tab2.page';
 
+
 describe('Tab2Page', () => {
   let component: Tab2Page;
   let fixture: ComponentFixture<Tab2Page>;
@@ -23,4 +24,11 @@ describe('Tab2Page', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+});
+
+reorderGroup.addEventListener('ionItemReorder', (ev) => {
+  console.log(`Moving item from ${ev.detail.from} to ${ev.detail.to}`);
+
+  this.dataList = reorderArray(this.dataList, ev.detail.from, ev.detail.to);
+  ev.detail.complete();
 });

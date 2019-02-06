@@ -1,3 +1,4 @@
+<script src="test.js"></script>
 <ion-header>
   <ion-toolbar>
     <ion-title>
@@ -6,4 +7,94 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+<ion-grid>
+  <ion-row>
+    <ion-col align-self: flex-start>
+      1
+    </ion-col>
+    <ion-col align-self: flex-start>
+      2
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col align-self: flex-start>
+      3
+    </ion-col>
+    <ion-col align-self: flex-start>
+      4
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-button (click)="presentAlert()" expand="block">Touch Me</ion-button>
+  </ion-row>
+</ion-grid>
+<ion-card>
+  <ion-card-header>
+    Card 1
+  </ion-card-header>
+</ion-card>
+<ion-card>
+    <ion-card-header>
+      Card 2
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+      <ion-card-header>
+       Card 3
+      </ion-card-header>
+    </ion-card>
+
+
+
+
+    <ion-content>
+        <ion-list>
+          <ion-reorder-group>
+      
+            <ion-item>
+              <ion-label>
+                Item 1
+              </ion-label>
+              <ion-reorder slot="end"></ion-reorder>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label>
+                Item 2
+              </ion-label>
+              <ion-reorder slot="start"></ion-reorder>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label>
+                Item 3 
+              </ion-label>
+              <ion-reorder slot="end">
+                <ion-icon name="pizza"></ion-icon>
+              </ion-reorder>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label>
+                Item 4 
+              </ion-label>
+              <ion-reorder slot="start">
+                <ion-icon name="pizza"></ion-icon>
+              </ion-reorder>
+            </ion-item>
+      
+            <ion-reorder>
+              <ion-item>
+                <ion-label>
+                  Item 5
+                </ion-label>
+                </ion-item>
+            </ion-reorder>
+      
+          </ion-reorder-group>
+        </ion-list>
+      </ion-content>
+
+
+</ion-content>
